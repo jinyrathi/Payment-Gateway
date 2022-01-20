@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-image: url(pexels-markus-spiske-3806749.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+ul, li, a{
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+    padding: 0 1.5rem;
+}
+ul, li{
+    margin: 0 1rem;
+}
+#links, #heading{
+ display: inline-flex;
+}
+#links{
+    padding-top: 1rem;
+}
+nav{
+    height: auto;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Spartan', sans-serif;
+    font-size: 1.5rem;
+    background-color: #00000046;
+}
+
+a.active, a.icon:hover, #links a:hover {
+    color: #fdaa02bb;
+}
+a.icon{
+    display: none;
+    font-size: 3rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+
+#heading{
+    font-size: 3.5rem;
+}
+#x, #equal{
+    color: #850000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    vertical-align: center;
+}
+main{
+    width: 90%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.first{
+    color: #fff;
+    font-family: 'Spartan', sans-serif;
+    font-size: 3rem;
+}
+.first h1, p{
+    font-weight: bolder;
+    text-shadow: 1rem 1rem 2rem #000;
+}
+p{
+    color: #850000;
+    font-size: 2.2rem;
+    padding: 4rem 0;
+    letter-spacing: .4rem;
+    text-shadow: 1rem 1.5rem 2.5rem #000;
+}
+
+#btn{
+    color: #fff;
+    background-color: #00000093;
+    border: .2rem solid #fff;
+    box-shadow: 0 0 .3rem #fff;
+    text-align: center;
+    font-family: 'Spartan', sans-serif;
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    padding: 1.5rem 3.5rem;
+    width: auto;
+    
+}
+#btn:hover{
+    background-color: #fdaa02bb;
+}
+
+
+@media (max-width: 1280px) {
+    html{
+        font-size: 58%;
+    }
+}
+@media (max-width: 1024px) {
+    html{
+        font-size: 54%;
+    }
+}
+@media (max-width:768px) {
+    html{
+         font-size: 49%;
+    }
+}
+@media (max-width:480px) {
+    #heading{
+         font-size: 3rem;
+    }
+    #word-break::after{
+        content:"\a";
+        white-space: pre;
+    }
+}
+@media (max-width: 909px) {
+    nav {
+        overflow: hidden;
+        position: relative;
+      }
+      #links {
+        display: none;
+      }
+      header a{
+          display: block;
+          margin: auto;
+      }
+       header a.icon{
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+      }
+      
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway Integration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="heading">
+                <a href="index.html"><span id="word-break">The Spark</span> Foundation</a>
+            </ul>
+            <ul id="links">
+                <li>
+                    <a class="active" href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="https://www.thesparksfoundationsingapore.org/" target="_blank">ABOUT</a>
+                </li>
+                <li>
+                    <a href="https://www.thesparksfoundationsingapore.org/contact-us/" target="_blank">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </header>
+    <main>
+        <section class="first">
+            <h1 class="sec">SMALL ACTION <span id="x">x</span> LOTS OF PEOPLE <span id="equal">=</span> BIG CHANGE</h1>
+            <p class="sec">BE THE REASON FOR CHANGE</p>
+            <a id="btn" href="https://rzp.io/l/CFRJjiUV" target="_blank">Donate</a>
+        </section>
+    </main>
+</body>
+<script>
+    function myFunction() {
+        var x = document.getElementById("links");
+        if (x.style.display == "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+</html>
